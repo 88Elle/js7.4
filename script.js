@@ -4,9 +4,12 @@ let users = [
     { name: 'Маша ', surname:'Петрова ', id: 3 }
 ]
 
-for(let i = 0; i < users.length;i++){
-
- let fullname = users.map ((el, i) => el.name + el.surname + el.id);
-
- console.log(fullname[i]);
+let fullname = users.map ((el) => {
+    let newUsers = {
+        fullname: (el.name + el.surname), id:el.id 
 }
+
+    console.log(newUsers);
+});
+
+   
